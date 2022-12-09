@@ -1,0 +1,88 @@
+.nav-links-menu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.line1 {
+  width: 30px;
+  height: 4px;
+  margin-top: 6px;
+  background-color: blue;
+  transition: all 1s ease;
+}
+
+.line2 {
+  width: 30px;
+  height: 4px;
+  background-color: blue;
+  margin-top: 6px;
+  transition: all 1s ease;
+}
+
+.line3 {
+  width: 30px;
+  height: 4px;
+  background-color: blue;
+  margin-top: 6px;
+  transition: all 1s ease;
+}
+.line1-active {
+  width: 30px;
+  height: 4px;
+  margin-top: 6px;
+  background-color: blue;
+  transform: rotate(45deg);
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+.line2-active {
+  width: 30px;
+  height: 4px;
+  background-color: blue;
+  margin-top: 6px;
+  transform: rotate(720deg);
+  opacity: 0;
+  transform-origin: center;
+  transition: all 1s ease;
+}
+
+.line3-active {
+  width: 30px;
+  height: 4px;
+  background-color: blue;
+  margin-top: 6px;
+  transform: rotate(-45deg);
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-links-menu {
+    display: block;
+    flex-direction: column;
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+.sideBarOpen {
+  display: none;
+  transition: all 1s ease;
+}
+.sideBar {
+  display: none;
+  transition: all 1s ease;
+}
+@media screen and (max-width: 767px) {
+  .sideBarOpen {
+    display: block;
+    transition: all 1s ease;
+  }
+  .sideBar {
+    display: none;
+    transition: all 1s ease;
+  }
+}
